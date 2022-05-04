@@ -1,0 +1,67 @@
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+
+.pre-footer
+{
+    align-items: center;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    grid-column: 1 / -1;
+    grid-row: 4 /5;
+    padding: 2rem 0rem 2rem 0rem;
+
+    .logos
+    {
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .redes-sociales
+    {   
+        p
+        {
+            color: $color-secundario;
+            font-family: $tipografia-primaria;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        .iconos
+        {   display: flex;
+            gap: 4.1rem;
+            margin-top: 2rem;
+            a
+            {
+                font-size: 3rem;
+                text-decoration: none;
+            }
+
+            .fa-twitter
+            {
+                color: #14AED0;
+            }
+
+            .fa-facebook-f
+            {
+                color: #1476D0;
+            }
+
+            .fa-instagram
+            {
+                color: #CE0CFF;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px)
+{
+    .pre-footer
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0rem 7.5rem;
+    }
+}

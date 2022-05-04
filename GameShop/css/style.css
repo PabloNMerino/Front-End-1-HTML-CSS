@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 90px 512px 1575px 191px 25px;
+}
+
+@media (min-width: 769px) {
+  body {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 512px 777px 216px 25px;
+  }
+}
+header {
+  align-items: center;
+  background-color: #222222;
+  display: flex;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  justify-content: space-between;
+  padding: 2rem;
+}
+header .logo-izq {
+  display: flex;
+  gap: 1.1rem;
+}
+header .listas-y-carrito {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  header .logo-der {
+    display: none;
+  }
+  header .listas-y-carrito {
+    display: flex;
+    gap: 4.5rem;
+  }
+  header .listas-y-carrito nav ul {
+    display: flex;
+    gap: 0.8rem;
+    list-style: none;
+  }
+  header .listas-y-carrito nav ul li a {
+    color: #F3F3F3;
+    font-family: "Roboto";
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  header .listas-y-carrito nav ul li a:hover {
+    color: #D01418;
+  }
+  header .listas-y-carrito .carrito a {
+    color: #D01418;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}
+.pre-main {
+  align-items: center;
+  background: url(../img/fondo\ premain.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  justify-content: center;
+  padding: 0rem 3.9rem;
+}
+.pre-main .descuento {
+  color: #F3F3F3;
+  display: flex;
+  font-family: "Roboto";
+  font-size: 4rem;
+  font-weight: 700;
+  gap: 1rem;
+  text-align: center;
+}
+.pre-main .descuento .valor-de-descuento {
+  color: #D01418;
+}
+.pre-main a {
+  text-decoration: none;
+}
+.pre-main a .btn-comprar {
+  align-items: center;
+  background-color: #D01418;
+  border-radius: 5px;
+  color: #F3F3F3;
+  display: flex;
+  font-family: "Roboto";
+  font-size: 2.5rem;
+  font-weight: 500;
+  height: 61px;
+  justify-content: center;
+  width: 220px;
+}
+.pre-main a .btn-comprar:hover {
+  border: 2px solid white;
+}
+
+@media (min-width: 769px) {
+  .pre-main {
+    background: url(../img/fondo\ premain\ desktop.png) no-repeat;
+    background-size: cover;
+  }
+}
+main .productos-destacados .jueguitos .juego-mk11, main .productos-destacados .jueguitos .juego-fifa21, main .productos-destacados .jueguitos .juego-detroit {
+  display: grid;
+  gap: 0.1rem;
+  grid-template-columns: 240px;
+  grid-template-rows: 223px 99px;
+}
+
+main .productos-destacados .jueguitos .juego-mk11 .img-juego, main .productos-destacados .jueguitos .juego-fifa21 .img-juego, main .productos-destacados .jueguitos .juego-detroit .img-juego {
+  align-items: center;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  justify-content: center;
+}
+
+main .productos-destacados .jueguitos .juego-mk11 .datos-de-pago, main .productos-destacados .jueguitos .juego-fifa21 .datos-de-pago, main .productos-destacados .jueguitos .juego-detroit .datos-de-pago {
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  gap: 0.4rem;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+main .productos-destacados .jueguitos .juego-mk11 .datos-de-pago .precio, main .productos-destacados .jueguitos .juego-fifa21 .datos-de-pago .precio, main .productos-destacados .jueguitos .juego-detroit .datos-de-pago .precio {
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+main .productos-destacados .jueguitos .juego-mk11 .datos-de-pago .cuotas, main .productos-destacados .jueguitos .juego-fifa21 .datos-de-pago .cuotas, main .productos-destacados .jueguitos .juego-detroit .datos-de-pago .cuotas {
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+main .productos-destacados .jueguitos .juego-mk11 .datos-de-pago .envio, main .productos-destacados .jueguitos .juego-fifa21 .datos-de-pago .envio, main .productos-destacados .jueguitos .juego-detroit .datos-de-pago .envio {
+  color: #619D00;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main {
+  background-color: #F3F3F3;
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+main .productos-destacados {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+main .productos-destacados h2 {
+  font-family: "Roboto";
+  font-size: 3rem;
+  font-weight: 400;
+}
+main .productos-destacados .jueguitos {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .productos-destacados .jueguitos .juego-detroit .img-juego a {
+  transition-duration: 0.5s;
+}
+main .productos-destacados .jueguitos .juego-detroit .img-juego a:hover {
+  transform: scale(1.2);
+}
+main .productos-destacados .jueguitos .juego-fifa21 .img-juego a {
+  transition-duration: 0.5s;
+}
+main .productos-destacados .jueguitos .juego-fifa21 .img-juego a:hover {
+  transform: scale(1.2);
+}
+main .productos-destacados .jueguitos .juego-mk11 .img-juego a {
+  transition-duration: 0.5s;
+}
+main .productos-destacados .jueguitos .juego-mk11 .img-juego a:hover {
+  transform: scale(1.2);
+}
+main .productos-estrellas {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 8.5rem;
+}
+main .productos-estrellas h2 {
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 3rem;
+  font-weight: 400;
+}
+main .productos-estrellas .productos {
+  display: grid;
+  grid-template-columns: 288px;
+  grid-template-rows: 108px 108px;
+  gap: 2.4rem;
+}
+main .productos-estrellas .productos .sillas-gamer {
+  align-items: center;
+  background: url(../img/banner\ 1.png) no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  display: flex;
+  grid-row: 1/2;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  text-decoration: none;
+}
+main .productos-estrellas .productos .sillas-gamer p {
+  color: #F3F3F3;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+}
+main .productos-estrellas .productos .computadoras {
+  align-items: center;
+  background: url(../img/banner\ 2.png) no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  display: flex;
+  grid-row: 2/3;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  text-decoration: none;
+}
+main .productos-estrellas .productos .computadoras p {
+  color: #F3F3F3;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (min-width: 769px) {
+  main .productos-destacados .jueguitos {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  main .productos-estrellas .productos {
+    grid-template-columns: 361px 361px;
+    grid-template-rows: 135px;
+  }
+  main .productos-estrellas .productos .sillas-gamer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  main .productos-estrellas .productos .computadoras {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+.pre-footer {
+  align-items: center;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  padding: 2rem 0rem 2rem 0rem;
+}
+.pre-footer .logos {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+.pre-footer .redes-sociales p {
+  color: #F3F3F3;
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 400;
+}
+.pre-footer .redes-sociales .iconos {
+  display: flex;
+  gap: 4.1rem;
+  margin-top: 2rem;
+}
+.pre-footer .redes-sociales .iconos a {
+  font-size: 3rem;
+  text-decoration: none;
+}
+.pre-footer .redes-sociales .iconos .fa-twitter {
+  color: #14AED0;
+}
+.pre-footer .redes-sociales .iconos .fa-facebook-f {
+  color: #1476D0;
+}
+.pre-footer .redes-sociales .iconos .fa-instagram {
+  color: #CE0CFF;
+}
+
+@media (min-width: 769px) {
+  .pre-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 7.5rem;
+  }
+}
+footer {
+  align-items: center;
+  background-color: #F3F3F3;
+  display: flex;
+  grid-column: 1/-1;
+  grid-row: 5/6;
+  justify-content: center;
+}
+footer p {
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */

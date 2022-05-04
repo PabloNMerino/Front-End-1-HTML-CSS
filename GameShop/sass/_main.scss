@@ -1,0 +1,307 @@
+@import "variables";
+
+%estructura-juegos
+{
+    display: grid;
+    gap: 0.1rem;
+    grid-template-columns: 240px;
+    grid-template-rows: 223px 99px;
+}
+
+%portada-de-juego
+{
+    align-items: center;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: center;
+}
+
+%formas-de-pago
+{
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    font-family: $tipografia-primaria;
+    gap: 0.4rem;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+%precio-del-juego
+{
+    color: $color-primario;
+    font-family: $tipografia-primaria;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+%cuotas-del-juego
+{
+    color: $color-primario;
+    font-family: $tipografia-primaria;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+%informacion-de-envio
+{
+    color: $color-terciario;
+    font-family: $tipografia-primaria;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+main
+{
+    background-color: $color-secundario;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+
+    .productos-destacados
+    {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-top: 2.5rem;
+        h2
+        {
+            font-family: $tipografia-primaria;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+
+        .jueguitos
+        {   
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            .juego-detroit
+            {
+                @extend %estructura-juegos;
+
+                .img-juego
+                {
+                    @extend %portada-de-juego;
+
+                    a
+                    {
+                        transition-duration: 0.5s;
+                        &:hover
+                        {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+
+                .datos-de-pago
+                {
+                    @extend %formas-de-pago;
+
+                    .precio
+                    {
+                        @extend %precio-del-juego;
+                    }
+
+                    .cuotas
+                    {
+                        @extend %cuotas-del-juego;
+                    }
+
+                    .envio
+                    {
+                        @extend %informacion-de-envio;
+                    }
+                }
+            }
+
+            .juego-fifa21
+            {
+                @extend %estructura-juegos;
+
+                .img-juego
+                {
+                    @extend %portada-de-juego;
+
+                    a
+                    {
+                        transition-duration: 0.5s;
+                        &:hover
+                        {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+
+                .datos-de-pago
+                {
+                    @extend %formas-de-pago;
+
+                    .precio
+                    {
+                        @extend %precio-del-juego;
+                    }
+
+                    .cuotas
+                    {
+                        @extend %cuotas-del-juego;
+                    }
+
+                    .envio
+                    {
+                        @extend %informacion-de-envio;
+                    }
+                }
+            }
+
+            .juego-mk11
+            {
+                @extend %estructura-juegos;
+
+                .img-juego
+                {
+                    @extend %portada-de-juego;
+                    a
+                    {
+                        transition-duration: 0.5s;
+                        &:hover
+                        {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+
+                .datos-de-pago
+                {
+                    @extend %formas-de-pago;
+
+                    .precio
+                    {
+                        @extend %precio-del-juego;
+                    }
+
+                    .cuotas
+                    {
+                        @extend %cuotas-del-juego;
+                    }
+
+                    .envio
+                    {
+                        @extend %informacion-de-envio;
+                    }
+                }
+            }
+        }
+    }
+
+    .productos-estrellas
+    {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 8.5rem;
+        h2
+        {
+            color: $color-primario;
+            font-family: 'Roboto';
+            font-size: 3rem;
+            font-weight: 400;
+        }
+
+        .productos
+        {
+            display: grid;
+            grid-template-columns: 288px;
+            grid-template-rows: 108px 108px;
+            gap: 2.4rem;
+
+            .sillas-gamer
+            {
+                align-items: center;
+                background: url(../img/banner\ 1.png) no-repeat;
+                background-size: cover;
+                border-radius: 5px;
+                display: flex;
+                grid-row: 1 / 2;
+                justify-content: flex-end;
+                padding-right: 3rem;
+                text-decoration: none;
+
+                p
+                {
+                    color: $color-secundario;
+                    font-family: $tipografia-primaria;
+                    font-size: 15px;   
+                    font-weight: 400;
+                }
+            }
+
+            .computadoras
+            {
+                align-items: center;
+                background: url(../img/banner\ 2.png) no-repeat;
+                background-size: cover;
+                border-radius: 5px;
+                display: flex;
+                grid-row: 2 / 3;
+                justify-content: flex-end;
+                padding-right: 3rem;
+                text-decoration: none;
+
+                p
+                {
+                    color: $color-secundario;
+                    font-family: $tipografia-primaria;
+                    font-size: 15px;   
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px)
+{
+
+    main
+    {
+
+        .productos-destacados
+        {
+            .jueguitos
+            {
+                flex-direction: row;
+                gap: 2.5rem;
+            }
+        }
+
+        .productos-estrellas
+        {
+            .productos
+            {
+                grid-template-columns: 361px 361px;
+                grid-template-rows: 135px;
+
+                .sillas-gamer
+                {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                }
+
+                .computadoras
+                {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                }
+            }
+        }
+    }
+}

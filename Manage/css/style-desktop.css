@@ -1,0 +1,343 @@
+:root
+{
+    --colorPrAzulOscuro: #232C50;
+    --colorPrRojoBrillante: #F3603B;
+    --colorSecAzulMuyOscuro: #1d1e25;
+    --colorSecRojoPalido: #ffefea;
+    --colorVarGrisClaro: #f9f9f9;
+}
+
+@media (min-width: 769px)
+{
+
+/*------------------------  H  E  A  D  E  R  ------------------------*/
+
+header
+{
+    justify-content: space-around;
+}
+
+.menuHeader, .linkHeader /*menu central y boton lateral*/
+{
+    display: inline-block;
+}
+
+.fa-bars /*contenido de versio mobile*/
+{
+    display: none;
+}
+
+.menuHeader    /*Alineado de lista*/
+{
+    display: flex;
+    gap: 2.8rem
+}
+
+li /*Para el hover*/
+{
+    transition-duration: 0.5s;
+}
+
+li a, .linkHeader /*Fuente*/
+{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.tipoLink
+{
+    color: var(--colorPrAzulOscuro);
+}
+
+.linkHeader /*Maquetado boton*/
+{
+    align-items: center;
+    animation: animacionDeBoton 1s infinite;
+    animation-direction: alternate;
+    background-color: var(--colorPrRojoBrillante);
+    border-radius: 5rem;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: white;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    width: 134px;
+}
+
+li:hover /*agranda el texto al posicionar el cursor*/
+{
+    transform: scale(1.2);
+} 
+
+.linkHeader:active /*efecto de pulsar al clickear*/
+{
+    transform: scale(0.8);
+}
+
+/*------------------------  M  A  I  N  ------------------------*/
+
+/*--------better products--------*/
+
+.betterProducts /*alineado horizontal de elementos*/
+{
+    box-sizing: border-box;
+    flex-direction: row;
+    height: 525px;
+    justify-content: space-around;
+    margin-top: 7rem;
+}
+
+.contGetStarted /*sombreado oscuro del boton*/
+{
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.descripcionProductos
+{
+    align-items: flex-start;
+    margin-bottom: 0rem;
+    padding: 0rem;
+    width: 439px;
+}
+
+h1, .descripcionProductos p
+{
+    text-align: left;
+    transition-duration: 0.5s;
+}
+
+h1
+{
+    font-size: 5.8rem;
+}
+.descripcionProductos p
+{
+    color: #000000;
+}
+
+h1:hover, .differenceIzq h2:hover, .contComentarios h2:hover
+{
+color: var(--colorPrRojoBrillante);
+}
+/*--------Diferencias--------*/
+
+.contDiferencias /*Alineado horizontal*/
+{
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7rem;
+}
+
+.differenceIzq /*Alineado*/
+{
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 212px;
+    width: 30%;
+}
+
+.differenceIzq::after /*Adaptacion del pseudoelemento a desktop*/
+{
+    color: #000000;
+    text-align: left;
+}
+.differenceIzq h2
+{
+    text-align: left;
+}
+
+.differenceIzq h2
+{
+    transition-duration: 0.5s;
+}
+
+.descrDif
+{
+    width: 38.2%;
+}
+
+.subt /*Alineado*/
+{
+    background-color: white;
+}
+
+.descripcion
+{
+    margin-left: 7.2rem;
+    padding-top: 0rem;
+}
+
+/*--------Comentarios--------*/
+
+.contComentarios
+{
+    gap: 10rem;
+    margin: 12rem;
+}
+
+.contComentarios h2
+{
+    transition-duration: 0.5s;
+}
+
+.persona1, .persona3 
+{
+    display: inline-block;
+}
+
+.personas /*background de color gris ancho*/
+{
+    background-color: var(--colorVarGrisClaro);
+    display: flex;
+    gap: 2.9rem ;
+    height: 219px;
+    min-width: 900px;
+    width: 100%;
+}
+
+.persona2
+{
+    margin-left: 0%;
+}
+
+.contGris /*boxes de personas con backgrounds individuales*/
+{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+    height: 219px;
+    justify-content: center;
+    padding: 9rem 2.1rem 3.8rem 2.1rem;
+    position: relative;
+    width: 33.33%;
+}
+
+.foto1, .foto3
+{
+    background-size: cover;
+    bottom: 184px;
+    height: 70px;
+    position: absolute;
+    width: 70px;
+}
+
+
+.foto1
+{
+    background-image: url(../imagenes/avatar-anisha.png);
+}
+
+.foto3
+{
+    background-image: url(../imagenes/avatar-richard.png);
+}
+
+.fa-ellipsis /*icono de mobile*/
+{
+    display: none;
+}
+
+.boxYboton
+{
+    gap: 2rem;
+}
+
+/*--------Franja Naranja--------*/
+
+.franjaNaranja /*Ordenado y seteo de size*/
+{   
+    align-items: center;
+    background-color: #F3613C;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 224px;
+    justify-content: space-around;
+}
+
+.franjaNaranja article /*box de texto*/
+{
+    height: 96px;
+    width: 470px;
+}
+
+.simplifica
+{
+    text-align: left;
+}
+
+/*------------------------  F  O  O  T  E  R ------------------------*/
+
+footer
+{
+    height: 247px;
+    padding: 0rem;
+}
+.footerEntero /*Alineado*/
+{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+    height: 247px;
+    justify-content: space-between;
+}
+
+.logos /*alineado vertical del logo e iconos*/
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.iconos /*fuente de iconos*/
+{
+    gap: 2rem;
+}
+
+.iconos a
+{
+transition-duration: 0.7s;
+}
+
+.iconos a:hover
+{
+    transform: rotate(360deg);
+}
+
+.copyright /*correcion respecto a mobile*/
+{
+    top: 0rem;
+}
+
+.listas /* alineado vertical de las 2 listas centrales*/
+{
+    display: flex;
+    gap: 15rem;
+}
+.lista1 ul, .lista2 ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.formulario /*alineado de form y copyright*/
+{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+
+}

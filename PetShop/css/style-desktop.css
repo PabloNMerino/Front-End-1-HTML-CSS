@@ -1,0 +1,193 @@
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Roboto&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+/*---------------H E A D E R---------------*/
+
+header
+{
+    background-color: #222222;
+    display: flex;
+    height: 20px;
+    width: 100%;
+}
+
+.textoDeHeaderYFooter
+{
+    color: #F3F3F3;
+    font-family: 'Roboto';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.separacionHeader
+{   
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menuSuperior
+{
+    display: flex;
+}
+
+.ofertas
+{
+    margin-left: 70px;
+}
+
+.arg
+{
+    margin: 0px 50px 0px 20px;
+}
+
+/*---------- Parte amarilla----------*/
+
+.fa-bars
+{
+    display: none;
+}
+
+.menuMain
+{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2.5rem;
+}
+
+.tipografiaDeMenuMain
+{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.iconoCategorias, .iconoPets, .iconoNosotros
+{
+    display: flex;
+    margin: 0px 1.5rem;
+}
+
+.iconoContactanos
+{
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+    margin-left: 1.5rem;
+}
+
+.fa-paw
+{
+    margin-right: 0.5rem;
+}
+
+.menuMain a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.menuMain a:hover
+{
+    font-size: 2rem;
+}
+
+
+/*---------------------Banner Bowl---------------------*/
+
+.bannerBowl
+{
+    background-image: url(../img/bowl\ desktop.png);
+}
+
+
+/*---------------------Productos---------------------*/
+
+.tituloProductos
+{
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.opcProductos
+{
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+.imagenes
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.contenedorGris
+{
+    background-color: #FBFAF6;
+}
+
+/*---------------------Contactanos---------------------*/
+
+form article
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem 0rem 1rem 0rem;
+    gap: 2rem;
+}
+/*---------------------Barra amarilla de abajo---------------------*/
+
+.barraAmaAbajo
+{
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+}
+
+.contBlanco
+{
+    width: 271px;
+}
+
+.contMarron
+{
+width: 70px;
+}
+
+.contMarron p, .contBlanco p
+{
+    font-size: 0.9rem;
+}
+
+/*---------------------barra marron de abajo---------------------*/
+
+.backMarron
+{
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 6rem;
+}

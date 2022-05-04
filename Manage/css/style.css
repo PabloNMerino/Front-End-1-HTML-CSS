@@ -1,0 +1,447 @@
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+:root
+{
+    --colorPrAzulOscuro: #232C50;
+    --colorPrRojoBrillante: #F3603B;
+    --colorSecAzulMuyOscuro: #1d1e25;
+    --colorSecRojoPalido: #ffefea;
+    --colorVarGrisClaro: #f9f9f9;
+}
+
+
+/*------------------------  H  E  A  D  E  R  ------------------------*/
+
+header         /*Alineado de elementos del header*/
+{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+}
+
+.menuHeader, .linkHeader /*Elementos para desktop*/
+{
+    display: none;
+}
+
+.fa-bars /*Icono Menu*/
+{
+    color: var(--colorPrAzulOscuro);
+    text-decoration: none;
+}
+
+.fa-bars:focus
+{
+    color: var(--colorPrRojoBrillante);
+}
+
+/*------------------------  M  A  I  N  ------------------------*/
+
+/*--------better products--------*/
+
+.betterProducts /*Alineado Vertical*/
+{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.descripcionProductos /*Alineado vertical de texto*/
+{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+    padding: 3rem;
+}
+
+h1  /*Fuente*/
+{
+    color: var(--colorPrAzulOscuro);
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.descripcionProductos p /*Fuente*/
+{
+    color: #B3B2B7;
+    font-size: 1.65rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contGetStarted /*Maquetado del boton*/
+{
+    align-items: center;
+    animation: animacionDeBoton 1s infinite;
+    animation-direction: alternate;
+    background-color: var(--colorPrRojoBrillante);
+    border-radius: 5rem;
+    box-shadow: 0px 4px 7px var(--colorSecRojoPalido);
+    color: #FFFFFF;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 500;
+    height: 44px;
+    justify-content: center;
+    text-decoration: none;
+    width: 134px;
+}
+
+.contGetStarted:active /*efecto de pulsar al clickear*/
+{
+    transform: scale(0.8);
+}
+
+@keyframes animacionDeBoton
+{
+    0%
+    {
+    }
+    100%
+    {
+        transform: translateY(10px);
+    }
+}
+
+/*--------Diferencias--------*/
+
+.contDiferencias /*Alineado Vertical*/
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+}
+
+.differenceIzq /*Alineado vertical de texto*/
+{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.differenceIzq::after /*Pseudo elemento para agregar texto*/
+{
+    color: #B3B2B7;
+    content: "Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams";
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.differenceIzq h2 /*Fuente*/
+{
+    color: var(--colorPrAzulOscuro);
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subt /*Alineado*/
+{
+    align-items: center;
+    background-color: var(--colorSecRojoPalido);
+    border-radius: 3rem 0rem 0rem 3rem;
+    display: flex;
+    gap: 2.3rem;
+    height: 43px;
+    margin-bottom: 0.45rem;
+    width: 100%;
+}
+
+.nro /*maquetado de los numeros*/
+{
+    align-items: center;
+    background-color: var(--colorPrRojoBrillante);
+    border-radius: 3rem;
+    color: white;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 43px;
+    justify-content: center;
+    width: 69px;
+}
+
+.tipografiaSubt /*Fuente*/
+{
+    color: var(--colorPrAzulOscuro);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.descripcion /* Fuente*/
+{
+    color: #B3B2B7;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+/*--------Comentarios--------*/
+
+.contComentarios /*Alineado Vertical*/
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+
+.contComentarios h2 /*Fuente*/
+{
+    color: #242E53;
+    font-size: 3.9rem;
+    font-weight: 700;
+}
+
+.persona1, .persona3 /*Contenido de version desktop*/
+{
+    display: none;
+}
+
+.boxYboton /*Alineado vertical*/
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.persona2 /*box de persona 2*/
+{
+    align-items: center;
+    background-color: var(--colorVarGrisClaro);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+    height: 219px;
+    justify-content: center;
+    margin-left: 10%;
+    padding: 9rem 2.1rem 3.8rem 2.1rem;
+    position: relative;
+    width: 80%;
+}
+
+.foto2
+{
+    background-image: url(../imagenes/avatar-ali.png);
+}
+
+.foto2
+{
+    background-size: cover;
+    bottom: 184px;
+    height: 70px;
+    position: absolute;
+    width: 70px;
+}
+
+.aliBravo
+{
+    color: #3F4868;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.comentario
+{
+    color: #B9B9C1;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.fa-ellipsis
+{
+    color: var(--colorPrRojoBrillante);
+    margin-top: 1rem;
+}
+
+.botonComentarios
+{
+    margin: 2rem;
+}
+
+/*--------Franja Naranja--------*/
+
+.franjaNaranja /*Ordenado y seteo de size*/
+{   
+    align-items: center;
+    background-color: #F3613C;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-around;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    width: 100%;
+}
+
+.simplifica /*Fuente*/
+{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contGetStartedBlanco /*boton blanco*/
+{
+    align-items: center;
+    background-color: white;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: var(--colorPrRojoBrillante);
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 500;
+    height: 44px;
+    justify-content: center;
+    text-decoration: none;
+    width: 134px;
+}
+
+/*------------------------  F  O  O  T  E  R ------------------------*/
+
+footer /*Alineado de footer*/
+{
+    align-items: center;
+    background-color: var(--colorSecAzulMuyOscuro);
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-between;
+    padding: 3rem 0rem;
+    width: 100%;
+}
+
+.footerEntero
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+}
+
+.formulario
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form /*alineado del formulario*/
+{
+    align-items: center;
+    display: flex;
+    gap: 0.9rem;
+}
+
+input /*maquetado del input*/
+{
+    background-color: white;
+    border-radius: 5rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    height: 44px;
+    outline: none;
+    padding-left: 1rem;
+    width: 201px;
+}
+
+input:focus
+{
+    background-color: var(--colorSecRojoPalido);
+    border: 2px var(--colorPrRojoBrillante) solid;
+}
+
+button /*maquetado del button*/
+{
+    background-color: var(--colorPrRojoBrillante);
+    border-radius: 5rem;
+    border: none;
+    color: white;
+    font-weight: 500;
+    height: 42px;
+    width: 63px;
+}
+
+.listas /* alineado horizontal de las 2 listas centrales*/
+{
+    display: flex;
+    gap: 13rem;
+}
+
+.lista1 ul, .lista2 ul /*alineado vertical de cada lista*/
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+footer a /*fuente de los enlaces del footer*/
+{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.logos /*alineado vertical del logo e iconos*/
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6.4rem;
+}
+
+.iconos /*fuente de iconos*/
+{
+    color: white;
+    display: flex;
+    gap: 4rem;
+}
+
+.copyright /*fuente y posicion del copyright*/
+{   
+    color: #8C8C94;
+    font-size: 12.5px;
+    font-weight: 500;
+    position: relative;
+    top: 34rem;
+}

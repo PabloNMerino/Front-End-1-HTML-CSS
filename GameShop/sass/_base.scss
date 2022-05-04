@@ -1,0 +1,27 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 90px 512px 1575px 191px 25px;
+}
+
+@media (min-width: 769px)
+{   
+    body
+    {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 512px 777px 216px 25px;
+    }
+}

@@ -1,0 +1,75 @@
+header
+{
+    align-items: center;
+    background-color: #222222;
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: space-between;
+    padding: 2rem;
+
+    .logo-izq
+    {
+        display: flex;
+        gap: 1.1rem;
+    }
+
+    .listas-y-carrito
+    {
+        display: none;
+    }
+}
+
+@media (min-width:769px)
+{
+    header
+    {
+        .logo-der
+        {
+            display: none;
+        }
+
+        .listas-y-carrito
+        {
+            display: flex;
+            gap: 4.5rem;
+            nav
+            {
+                ul
+                {
+                    display: flex;
+                    gap: 0.8rem;
+                    list-style: none;
+
+                    li
+                    {
+                        a
+                        {
+                            color: $color-secundario;
+                            font-family: $tipografia-primaria;
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            text-decoration: none;
+                            transition-duration: 0.2s;
+
+                            &:hover
+                            {
+                                color: #D01418;
+                            }
+                        }
+                    };
+                }
+            }
+
+            .carrito
+            {
+                a
+                {
+                    color: #D01418;
+                    font-size: 2rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
